@@ -1,0 +1,50 @@
+.sidebar_container {
+    height: 100vh;
+    max-width: 256px;
+    min-width: 256px;
+    border: black solid 5px;
+
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar_top_container, .sidebar_pagelinks_container {
+    width: stretch;
+    height: 96px;
+    margin: 16px;
+    border: black solid 1px;
+}
+
+.sidebar_pagelinks_container {
+    min-height: 512px;
+}
+
+.sidebar_pagelinks_button {
+    margin: auto;
+    border: none;
+    width: stretch;
+    background-color: white;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.sidebar_pagelinks_button:hover {
+    transition: background-color 0.4s;
+    background-color: grey;
+}
+
+.sidebar_pagelinks_button_text_wHover, .sidebar_pagelinks_button_text {
+    text-align: start;
+    transition: transform 0.3s;
+}
+
+.sidebar_pagelinks_button_text {
+    transform: translateX(10px);
+}
+
+.sidebar_pagelinks_button:hover .sidebar_pagelinks_button_text_wHover {
+    transition: transform 0.6s;
+    transform: translateX(10px);
+}
