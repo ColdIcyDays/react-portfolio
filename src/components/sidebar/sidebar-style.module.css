@@ -4,6 +4,8 @@
     min-width: 256px;
     border: black solid 5px;
 
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     position: sticky;
