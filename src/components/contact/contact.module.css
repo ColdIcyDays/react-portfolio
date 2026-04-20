@@ -1,0 +1,47 @@
+.contact_container {
+    width: stretch;
+    height: stretch;
+    display: flex;
+}
+
+.contact_content_container {
+    width: 75%;
+    height: 756px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+
+    /* TESTING STUFF */
+    border: black solid 2px;
+    box-sizing: border-box;
+
+}
+
+.contact_content_side_container, .contact_content_side_contactinfo_container, .contact_content_side_contactinfo_compartment {
+    width: stretch;
+    height: stretch;
+
+    /* TESTING STUFF */
+    border: black solid 2px;
+    box-sizing: border-box;
+}
+
+.contact_content_side_contactinfo_container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.contact_content_side_contactinfo_compartment {
+
+    margin: 32px;
+
+    /* TESTING STUFF */
+    border: red solid 2px;
+}
+
+.contact_content_side_contactinfo_compartment a {
+    text-decoration: underline;
+}

@@ -10,19 +10,19 @@
         "ProjectName": "CV",
         "ProjectDesc": "My cv rewritten in HTML and CSS.",
         "HasUniquePage": false,
-        "LongProjectDesc": "This was my first front-end project during my Lexicon course."
+        "HTML_LongProjectDesc": "This was my first front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Munamii cakery",
         "ProjectDesc": "A simple website for a cakery.",
         "HasUniquePage": false,
-        "LongProjectDesc": "This was my second front-end project during my Lexicon course."
+        "HTML_LongProjectDesc": "This was my second front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Portfolio",
         "ProjectDesc": "This portfolio page.",
         "HasUniquePage": false,
-        "LongProjectDesc": "This was my third front-end project during my Lexicon course."
+        "HTML_LongProjectDesc": "This was my third front-end project during my Lexicon course."
       }
     ]
   },
@@ -37,7 +37,7 @@
         "ProjectName": "Successor",
         "ProjectDesc": "Successor is a tactical, real-time RPG in Unreal Engine 5.",
         "HasUniquePage": false,
-        "LongProjectDesc": "This is a game that is currently released on steam."
+        "HTML_LongProjectDesc": "This is a game that is currently released on steam."
       }
     ]
   }

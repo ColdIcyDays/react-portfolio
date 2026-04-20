@@ -1,6 +1,6 @@
-import testData from "../../../TestData/json/ProjectsData.json"
-import type {ProjectData} from '../../../json-interfaces/projects.tsx';
-import type {CategoryData} from '../../../json-interfaces/projects.tsx';
+import testData from "../../TestData/json/ProjectsData.json"
+import type {ProjectData} from '../../json-interfaces/projects.tsx';
+import type {CategoryData} from '../../json-interfaces/projects.tsx';
 
 export class ProjectsListJSONParser
 {

@@ -3,10 +3,10 @@ import {Sidebar} from "./components/sidebar/Sidebar.tsx";
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {HomeContainer} from "./components/home/HomeContainer.tsx";
 import {ProjectsContainer} from "./components/projects/ProjectsContainer.tsx";
-import {ProjectsListContainer} from "./components/projects/list-overview/ProjectsListContainer.tsx";
-
+import {ContactContainer} from "./components/contact/ContactContainer.tsx";
 
 function App() {
+
   return (
       <BrowserRouter>
         <div style={{display:"flex"}}>
@@ -24,21 +24,14 @@ function App() {
                     <HomeContainer/>
                 }/>
 
-                <Route path="/Projects" element={
-                    <ProjectsContainer/>
-                }/>
+                <Route path={"/Projects"} element={<ProjectsContainer/>}>
+                    <Route path={":category"} element={null}/>
+                    <Route path={":category/:projectname"} element={null}/>
+                </Route>
 
                 <Route path="/Contact" element={
-                    <div>
-                        <p>Contact</p>
-                    </div>
+                    <ContactContainer/>
                 }/>
-
-                <Route path="/Projects/:category" element={
-                    <ProjectsListContainer/>
-                }/>
-
-
             </Routes>
         </div>
       </BrowserRouter>

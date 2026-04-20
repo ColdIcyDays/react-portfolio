@@ -11,5 +11,5 @@ export interface CategoryData
     ProjectName: string;
     ProjectDesc: string;
     HasUniquePage: boolean;
-    LongProjectDesc: string;
+    HTML_LongProjectDesc: string;
 }

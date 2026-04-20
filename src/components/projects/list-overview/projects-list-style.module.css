@@ -36,11 +36,13 @@
 
 .project_list_item_button_container {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     padding-top: 8px;
 }
 
-.project_list_item_button_container button {
+.project_list_item_button {
     margin: auto;
+    display: block;
     min-width: 96px;
 }

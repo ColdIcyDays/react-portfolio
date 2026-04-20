@@ -1,8 +1,76 @@
 import styles from './projects-style.module.css'
 import testImage from '../../TestData/imgs/munamii_logo.png'
-import {Link} from "react-router-dom";
+import {Link, Navigate} from "react-router-dom";
+import {useParams} from "react-router";
+import {ProjectDataLoader} from "./ProjectDataLoader.tsx";
+import {ProjectsListContainer} from "./list-overview/ProjectsListContainer.tsx";
+import {ProjectListItemDetailsContainer} from "./list-overview/list-details/ProjectListItemDetailsContainer.tsx";
+import type {CategoryData} from "../../json-interfaces/projects.tsx";
+import {useState} from "react";
+
 
 export function ProjectsContainer() {
+    const [dataLoader] = useState(new ProjectDataLoader());
+
+    const params = useParams();
+    const isInCategory : boolean = params["category"] !== undefined;
+    const isInDetails : boolean = params["projectname"] !== undefined;
+
+    if (isInDetails)
+    {
+        const projName = params["projectname"];
+        if (projName === undefined) 
+        {
+            return (
+                <Navigate to={"/Home"}/>
+            );
+        }
+        
+        const categoryData = dataLoader.GetProjectCategoryData(params["category"]);
+
+        if (categoryData === undefined)
+        {
+            return (
+                <Navigate to={"/Home"}/>
+            );
+        }
+
+        let foundData: CategoryData | undefined = undefined;
+        for (let i = 0; i < categoryData.length; i++)
+        {
+
+            if (categoryData[i].ProjectName.replace(/\s/, "_") === projName)
+            {
+                foundData = categoryData[i];
+                break;
+            }
+        }
+
+        if (foundData === undefined)
+        {
+            return (
+                <Navigate to={"/Home"}/>
+            );
+        }
+
+
+        return(
+                <ProjectListItemDetailsContainer
+                    someData={foundData}
+                />
+        );
+    }
+
+    if (isInCategory)
+    {
+        const category = dataLoader.GetProjectCategory(params["category"]);
+        return (
+            <ProjectsListContainer
+                someProjectData={category}
+            />
+        );
+    }
+
     return (
         <div className={styles.projects_container}>
             <div className={styles.projects_category_container}>
