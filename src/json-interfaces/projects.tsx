@@ -1,7 +1,8 @@
 export interface ProjectData
 {
-    CategoryName: string;
-    "CategoryCTA": string;
+    CategorySubpageDenotation: string;
+    CategoryTitle: string,
+    CategoryCTA: string;
     Data: CategoryData[];
 }
 

@@ -18,7 +18,7 @@ export class ProjectsListJSONParser
     {
         for (let i = 0; i < this.LoadedJSONData.length; i++)
         {
-            if (this.LoadedJSONData[i].CategoryName == aCategory)
+            if (this.LoadedJSONData[i].CategorySubpageDenotation == aCategory)
             {
                 return this.LoadedJSONData[i];
             }

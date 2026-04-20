@@ -1,6 +1,8 @@
 [
   {
-    "CategoryName": "WebdevProjects",
+    "CategorySubpageDenotation": "WebdevProjects",
+    "CategoryTitle": "Webdev Projects",
+    "CategoryDescription": "These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing! These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing!",
     "CategoryCTA": "Go to website",
     "Data":
     [
@@ -25,8 +27,10 @@
     ]
   },
   {
-    "CategoryName": "GameProjects",
-    "CategoryCTA": "Go to game page",
+    "CategorySubpageDenotation": "GameProjects",
+    "CategoryTitle": "Game Projects",
+    "CategoryDescription": "These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing! These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing!",
+    "CategoryCTA": "Go to game",
     "Data":
     [
       {
