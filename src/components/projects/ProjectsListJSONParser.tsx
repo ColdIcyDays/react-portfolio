@@ -1,15 +1,15 @@
 import testData from "../../TestData/json/ProjectsData.json"
-import type {ProjectData} from '../../json-interfaces/projects.tsx';
 import type {CategoryData} from '../../json-interfaces/projects.tsx';
+import type {ProjectData} from '../../json-interfaces/projects.tsx';
 
 export class ProjectsListJSONParser
 {
-    LoadedJSONData: ProjectData[] = [];
+    LoadedJSONData: CategoryData[] = [];
     constructor() {
         this.LoadedJSONData = JSON.parse(JSON.stringify(testData));
     }
 
-    GetAllProjectCategories(): ProjectData[] {
+    GetAllProjectCategories(): CategoryData[] {
         return this.LoadedJSONData;
     }
 
@@ -18,7 +18,7 @@ export class ProjectsListJSONParser
         return this.GetProjectCategoryData(aCategory) != undefined;
     }
 
-    GetProjectCategory(aCategory: string): ProjectData | undefined
+    GetProjectCategory(aCategory: string): CategoryData | undefined
     {
         for (let i = 0; i < this.LoadedJSONData.length; i++)
         {
@@ -31,9 +31,9 @@ export class ProjectsListJSONParser
         return undefined;
     }
 
-    GetProjectCategoryData(aCategory: string): CategoryData[] | undefined
+    GetProjectCategoryData(aCategory: string): ProjectData[] | undefined
     {
-        let project: ProjectData | undefined = this.GetProjectCategory(aCategory);
+        let project: CategoryData | undefined = this.GetProjectCategory(aCategory);
 
         return project != undefined ? project.Data : undefined;
     }

@@ -1,14 +1,14 @@
 import { useParams } from "react-router";
 import styles from "./projects-list-style.module.css"
-import type {CategoryData, ProjectData} from "../../../json-interfaces/projects.tsx";
+import type {ProjectData, CategoryData} from "../../../json-interfaces/projects.tsx";
 import {ProjectListItem} from "./ProjectListItem.tsx";
 
-export function ProjectsListContainer({ someProjectData } : { someProjectData: ProjectData | undefined }) {
+export function ProjectsListContainer({ someProjectData } : { someProjectData: CategoryData | undefined }) {
     const handle = useParams();
 
     const category: string = handle["category"] != undefined ? handle["category"] : "undefined";
 
-    const projectData: ProjectData | undefined = someProjectData;
+    const projectData: CategoryData | undefined = someProjectData;
 
     if (projectData == undefined)
     {
@@ -18,7 +18,7 @@ export function ProjectsListContainer({ someProjectData } : { someProjectData: P
             </div>
         );
     }
-    const categoryData: CategoryData[] | undefined = projectData.Data;
+    const categoryData: ProjectData[] | undefined = projectData.Data;
 
     return (
         <div className={styles.project_list_container}>

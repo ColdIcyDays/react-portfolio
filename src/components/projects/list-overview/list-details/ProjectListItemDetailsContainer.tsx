@@ -1,9 +1,9 @@
-import type {CategoryData} from "../../../../json-interfaces/projects.tsx";
+import type {ProjectData} from "../../../../json-interfaces/projects.tsx";
 import {useParams} from "react-router";
 import styles from "./project-details.module.css"
 import testIMG from "../../../../TestData/imgs/munamii_logo.png"
 
-export function ProjectListItemDetailsContainer({someData} : {someData: CategoryData | undefined})
+export function ProjectListItemDetailsContainer({someData} : {someData: ProjectData | undefined})
 {
 
     if (someData === undefined)

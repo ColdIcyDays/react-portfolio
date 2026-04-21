@@ -1,16 +1,16 @@
-import type {ProjectData} from '../../json-interfaces/projects.tsx';
 import type {CategoryData} from '../../json-interfaces/projects.tsx';
+import type {ProjectData} from '../../json-interfaces/projects.tsx';
 import {ProjectsListJSONParser} from "./ProjectsListJSONParser.tsx";
 
 export class ProjectDataLoader
 {
     #JSONParser: ProjectsListJSONParser = new ProjectsListJSONParser();
 
-    GetAllProjectCategories(): ProjectData[] {
+    GetAllProjectCategories(): CategoryData[] {
         return this.#JSONParser.GetAllProjectCategories();
     }
 
-    GetProjectCategory(aCategory: string | undefined): ProjectData | undefined
+    GetProjectCategory(aCategory: string | undefined): CategoryData | undefined
     {
         if (aCategory !== undefined)
         {
@@ -29,7 +29,7 @@ export class ProjectDataLoader
         return false;
     }
 
-    GetProjectCategoryData(aCategory: string | undefined): CategoryData[] | undefined
+    GetProjectCategoryData(aCategory: string | undefined): ProjectData[] | undefined
     {
         if (aCategory !== undefined)
         {

@@ -1,17 +1,18 @@
-export interface ProjectData
+export interface CategoryData
 {
     CategorySubpageDenotation: string;
-    CategoryTitle: string,
-    CategoryImage: string,
+    CategoryTitle: string;
+    CategoryImage: string;
     CategoryCTA: string;
     CategoryDescription: string;
-    Data: CategoryData[];
+    Data: ProjectData[];
 }
 
-export interface CategoryData
+export interface ProjectData
 {
     ProjectName: string;
     ProjectDesc: string;
+    ProjectImage: string;
     HasUniquePage: boolean;
     HTML_LongProjectDesc: string;
 }

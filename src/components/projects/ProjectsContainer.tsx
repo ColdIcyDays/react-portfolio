@@ -3,7 +3,7 @@ import {useParams} from "react-router";
 import {ProjectDataLoader} from "./ProjectDataLoader.tsx";
 import {ProjectsListContainer} from "./list-overview/ProjectsListContainer.tsx";
 import {ProjectListItemDetailsContainer} from "./list-overview/list-details/ProjectListItemDetailsContainer.tsx";
-import type {CategoryData, ProjectData} from "../../json-interfaces/projects.tsx";
+import type {ProjectData, CategoryData} from "../../json-interfaces/projects.tsx";
 import {useState} from "react";
 import {ProjectCategory} from "./ProjectCategory.tsx";
 
@@ -34,7 +34,7 @@ export function ProjectsContainer() {
             );
         }
 
-        let foundData: CategoryData | undefined = undefined;
+        let foundData: ProjectData | undefined = undefined;
         for (let i = 0; i < categoryData.length; i++)
         {
 
@@ -71,7 +71,7 @@ export function ProjectsContainer() {
     }
 
     return (
-      <div className='h-dvh w-auto grow auto-rows-min'>
+      <div className='min-h-dvh w-auto grow auto-rows-min'>
 
           <div className="ml-12 h-[256px] reg-30-div right-0 flex flex-col-reverse align-bottom">
             <h1 className='text-8xl pb-8 pl-8 w-min h-min'>Projects</h1>
@@ -81,7 +81,7 @@ export function ProjectsContainer() {
 
           <div className='grid gap-12'>
               {
-                  dataLoader.GetAllProjectCategories().map((data: ProjectData, index)=> (<ProjectCategory
+                  dataLoader.GetAllProjectCategories().map((data: CategoryData, index)=> (<ProjectCategory
                       key={"ProjCategory"+ index}
                       ProjCategoryData={data}/>))
               }

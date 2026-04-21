@@ -10,20 +10,51 @@
       {
         "ProjectName": "CV",
         "ProjectDesc": "My cv rewritten in HTML and CSS.",
+        "ProjectImage": "imgs/successor.png",
         "HasUniquePage": false,
         "HTML_LongProjectDesc": "This was my first front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Munamii cakery",
         "ProjectDesc": "A simple website for a cakery.",
+        "ProjectImage": "imgs/successor.png",
         "HasUniquePage": false,
         "HTML_LongProjectDesc": "This was my second front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Portfolio",
         "ProjectDesc": "This portfolio page.",
+        "ProjectImage": "imgs/successor.png",
         "HasUniquePage": false,
         "HTML_LongProjectDesc": "This was my third front-end project during my Lexicon course."
+      },
+      {
+        "ProjectName": "TEST DATA AHHH",
+        "ProjectDesc": "TEST DATA AHHH.",
+        "ProjectImage": "imgs/successor.png",
+        "HasUniquePage": false,
+        "HTML_LongProjectDesc": "TEST DATA AHHH."
+      },
+      {
+        "ProjectName": "TEST DATA AHHH",
+        "ProjectDesc": "TEST DATA AHHH.",
+        "ProjectImage": "imgs/successor.png",
+        "HasUniquePage": false,
+        "HTML_LongProjectDesc": "TEST DATA AHHH."
+      },
+      {
+        "ProjectName": "TEST DATA AHHH",
+        "ProjectDesc": "TEST DATA AHHH.",
+        "ProjectImage": "imgs/successor.png",
+        "HasUniquePage": false,
+        "HTML_LongProjectDesc": "TEST DATA AHHH."
+      },
+      {
+        "ProjectName": "TEST DATA AHHH",
+        "ProjectDesc": "TEST DATA AHHH.",
+        "ProjectImage": "imgs/successor.png",
+        "HasUniquePage": false,
+        "HTML_LongProjectDesc": "TEST DATA AHHH."
       }
     ]
   },
@@ -38,6 +69,7 @@
       {
         "ProjectName": "Successor",
         "ProjectDesc": "Successor is a tactical, real-time RPG in Unreal Engine 5.",
+        "ProjectImage": "imgs/successor.png",
         "HasUniquePage": false,
         "HTML_LongProjectDesc": "This is a game that is currently released on steam."
       }

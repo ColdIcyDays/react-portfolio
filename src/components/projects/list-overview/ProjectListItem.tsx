@@ -1,10 +1,10 @@
 import styles from "./projects-list-style.module.css"
-import type {CategoryData} from "../../../json-interfaces/projects.tsx";
+import type {ProjectData} from "../../../json-interfaces/projects.tsx";
 import testIMG from "../../../TestData/imgs/munamii_logo.png"
 import {Link} from "react-router-dom";
 import {useParams} from "react-router";
 
-export function ProjectListItem({someData, aCategoryCTA}: {someData: CategoryData, aCategoryCTA: string}) {
+export function ProjectListItem({someData, aCategoryCTA}: {someData: ProjectData, aCategoryCTA: string}) {
 
     let cleanProjectName = someData.ProjectName.replace(/\s/, "_")
     return (
