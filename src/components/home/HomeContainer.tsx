@@ -1,4 +1,3 @@
-import styles from './home-style.module.css'
 import successorIMG from "../../imgs/successor.png"
 import munamiicakeryIMG from "../../imgs/munamii.png"
 

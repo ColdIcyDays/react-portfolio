@@ -1,6 +1,4 @@
-import styles from './projects-style.module.css'
-import testImage from '../../TestData/imgs/munamii_logo.png'
-import {Link, Navigate} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 import {useParams} from "react-router";
 import {ProjectDataLoader} from "./ProjectDataLoader.tsx";
 import {ProjectsListContainer} from "./list-overview/ProjectsListContainer.tsx";

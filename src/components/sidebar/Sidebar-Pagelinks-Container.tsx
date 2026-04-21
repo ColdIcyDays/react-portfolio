@@ -1,12 +1,10 @@
-import styles from "./sidebar-style.module.css";
 import {SidebarPagelinksButton} from "./SidebarPagelinksButton.tsx";
 import { useLocation } from 'react-router-dom'
-import {useState} from "react";
 
 export function SidebarPagelinksContainer({somePageNames = ["Home"]}) {
     const pathName = useLocation().pathname;
     console.log("Update path name, current path: " + pathName);
-    const [currentPageActive, setActivePage] = useState(() : string => {
+  /*  const [currentPageActive, setActivePage] = useState(() : string => {
 
         let loadedPath = pathName;
 
@@ -15,7 +13,7 @@ export function SidebarPagelinksContainer({somePageNames = ["Home"]}) {
         console.log("Current path: " + loadedPath);
 
         return loadedPath;
-    });
+    });*/
     return (
         <ul className='styles.sidebar_pagelinks_container mr-auto ml-auto mt-8'>
             {
@@ -23,7 +21,6 @@ export function SidebarPagelinksContainer({somePageNames = ["Home"]}) {
                     <SidebarPagelinksButton
                         key={aPageName}
                         name={aPageName}
-                        isHighlighted={useLocation().pathname === "/" + aPageName}
                     />
                 ))
             }
