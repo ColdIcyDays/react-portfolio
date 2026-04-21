@@ -15,7 +15,7 @@ function App() {
           />
             <Routes>
                 <Route path="*" element={
-                    <Navigate to={"/Home"}/>
+                    <div><p>Test</p> </div>
                 }>
 
                 </Route>
