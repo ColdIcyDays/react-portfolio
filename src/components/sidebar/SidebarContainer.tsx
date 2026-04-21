@@ -1,4 +1,4 @@
-import styles from "./sidebar-style.module.css"
+
 
 export function SidebarContainer({ children }: { children: React.ReactNode }) {
     return (
