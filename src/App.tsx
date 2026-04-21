@@ -9,7 +9,7 @@ function App() {
 
   return (
       <BrowserRouter>
-        <div style={{display:"flex"}}>
+        <div className="flex">
           <Sidebar
               somePageNames={["Home", "Projects", "Contact"]}
           />
