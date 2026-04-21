@@ -3,7 +3,7 @@ import munamiicakeryIMG from "../../imgs/munamii.png"
 
 export function HomeContainer() {
     return (
-        <div className="h-dvh w-auto grow flex flex-col">
+        <div className="min-h-dvh w-auto grow flex flex-col">
 
             <div className="m-auto w-min mt-[141px]">
 

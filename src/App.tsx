@@ -9,10 +9,10 @@ function App() {
 
   return (
       <BrowserRouter>
-        <div className="flex">
-          <Sidebar
-              somePageNames={["Home", "Projects", "Contact"]}
-          />
+        <div className="flex min-h-dvh max-h-max">
+              <Sidebar
+                  somePageNames={["Home", "Projects", "Contact"]}
+              />
             <Routes>
                 <Route path="*" element={
                     <Navigate to={"/Home"}/>
