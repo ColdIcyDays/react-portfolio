@@ -12,6 +12,7 @@
   --font-standard: "Satoshi", "sans-serif"; /* Test */
 
   --color-*: initial;
+  --color-clr-invisible: rgba(0,0,0,0);
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-clr-60-1: #1B262C;
