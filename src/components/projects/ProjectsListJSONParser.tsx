@@ -9,6 +9,10 @@ export class ProjectsListJSONParser
         this.LoadedJSONData = JSON.parse(JSON.stringify(testData));
     }
 
+    GetAllProjectCategories(): ProjectData[] {
+        return this.LoadedJSONData;
+    }
+
     IsValidCategory(aCategory: string): boolean
     {
         return this.GetProjectCategoryData(aCategory) != undefined;

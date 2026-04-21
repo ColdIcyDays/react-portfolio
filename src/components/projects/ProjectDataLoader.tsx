@@ -6,6 +6,10 @@ export class ProjectDataLoader
 {
     #JSONParser: ProjectsListJSONParser = new ProjectsListJSONParser();
 
+    GetAllProjectCategories(): ProjectData[] {
+        return this.#JSONParser.GetAllProjectCategories();
+    }
+
     GetProjectCategory(aCategory: string | undefined): ProjectData | undefined
     {
         if (aCategory !== undefined)

@@ -1,15 +1,14 @@
 import styles from "./sidebar-style.module.css"
 import {SidebarPagelinksContainer} from "./Sidebar-Pagelinks-Container.tsx";
 import {SidebarContainer} from "./SidebarContainer.tsx";
-
+import pfpIMG from "../../imgs/profile_picture.jpg"
 
 
 export function Sidebar({somePageNames=["Home"]}) {
     return (
         <SidebarContainer>
             <div className={styles.sidebar_top_container}>
-                <p style={{textAlign: "center"}}>Logo goes here</p>
-                <p style={{textAlign: "center"}}>Erik Ljungman</p>
+                <img src={pfpIMG} className="rounded-full ring-3 ring-clr-10-1 w-[75%] block m-auto mt-8"/>
             </div>
 
             <SidebarPagelinksContainer

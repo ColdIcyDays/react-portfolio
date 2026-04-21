@@ -8,7 +8,7 @@ export function ContactContainer() {
                     <div className={styles.contact_content_side_contactinfo_compartment}>
                         <h3>Contact</h3>
                         <h1>Reach out to me!</h1>
-                        <p>I live in the Malmö area <h2>(add address)</h2></p>
+                        <p>I live in the Malmö area </p> <h2>(add address)</h2>
                     </div>
 
                     <div className={styles.contact_content_side_contactinfo_compartment}>

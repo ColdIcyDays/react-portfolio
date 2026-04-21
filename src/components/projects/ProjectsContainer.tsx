@@ -5,8 +5,9 @@ import {useParams} from "react-router";
 import {ProjectDataLoader} from "./ProjectDataLoader.tsx";
 import {ProjectsListContainer} from "./list-overview/ProjectsListContainer.tsx";
 import {ProjectListItemDetailsContainer} from "./list-overview/list-details/ProjectListItemDetailsContainer.tsx";
-import type {CategoryData} from "../../json-interfaces/projects.tsx";
+import type {CategoryData, ProjectData} from "../../json-interfaces/projects.tsx";
 import {useState} from "react";
+import {ProjectCategory} from "./ProjectCategory.tsx";
 
 
 export function ProjectsContainer() {
@@ -72,6 +73,28 @@ export function ProjectsContainer() {
     }
 
     return (
+      <div className='h-dvh w-auto grow auto-rows-min'>
+
+          <div className="ml-12 h-[256px] reg-30-div right-0 flex flex-col-reverse align-bottom">
+            <h1 className='text-8xl pb-8 pl-8 w-min h-min'>Projects</h1>
+          </div>
+
+          <div className='h-12'></div>
+
+          <div className='grid gap-12'>
+              {
+                  dataLoader.GetAllProjectCategories().map((data: ProjectData, index)=> (<ProjectCategory
+                      key={"ProjCategory"+ index}
+                      ProjCategoryData={data}/>))
+              }
+          </div>
+
+
+      </div>
+
+    );
+
+    /*return (
         <div className={styles.projects_container}>
             <div className={styles.projects_category_container}>
                 <div className={styles.projects_category_image_container}>
@@ -99,5 +122,5 @@ export function ProjectsContainer() {
                 </div>
             </div>
         </div>
-    )
+    )*/
 }
