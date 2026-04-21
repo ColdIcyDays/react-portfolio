@@ -1,6 +1,6 @@
 import './App.css'
 import {Sidebar} from "./components/sidebar/Sidebar.tsx";
-import {BrowserRouter, Routes, Route/*, Navigate*/} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import {HomeContainer} from "./components/home/HomeContainer.tsx";
 import {ProjectsContainer} from "./components/projects/ProjectsContainer.tsx";
 import {ContactContainer} from "./components/contact/ContactContainer.tsx";
@@ -15,7 +15,7 @@ function App() {
           />
             <Routes>
                 <Route path="*" element={
-                    <div><p>Test</p> </div>
+                    <Navigate to={"/Home"}/>
                 }>
 
                 </Route>
