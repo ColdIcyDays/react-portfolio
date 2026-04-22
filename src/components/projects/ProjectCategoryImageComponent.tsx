@@ -29,12 +29,10 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
 
                 {/*<h1 className='relative w-77 m-auto text-black text-5xl text-center duration-500' style={{opacity: divOpacity}}>{someCategoryData.ProjectName}</h1>*/}
 
-                <img className='reg-10-img top-0 ring-clr-10-1/50 object-cover w-77 h-[inherit] group-hover/projectHovered:h-44 duration-500' src={someCategoryData.ProjectThumbnailImage}/>
+                <img className='transition-all duration-400 ease-in-out reg-10-img top-0 ring-clr-10-1/50 object-cover w-77 h-77 group-hover/projectHovered:h-44 ' src={someCategoryData.ProjectThumbnailImage}/>
 
                 <div ref={opacityRef}
-                     className='w-full hidden ease-in-out
-                group-hover/projectHovered:block
-                opacity-0 group-hover/projectHovered:opacity-100 duration-500'
+                     className='w-full hidden transition-all ease-in-out delay-100 duration-500 group-hover/projectHovered:block opacity-0 group-hover/projectHovered:opacity-100 '
                 style={{opacity: divOpacity}}>
                         <h1 className='text-center text-2xl mt-4 mb-4'>{someCategoryData.ProjectName}</h1>
                     <div className='flex flex-row justify-evenly w-full'>
