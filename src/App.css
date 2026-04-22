@@ -56,11 +56,28 @@
 }
 
 @layer components {
-  .reg-30-div {
+  .reg-30-div, .reg-top-titlediv {
     @apply bg-clr-30-1;
     @apply rounded-sm;
     @apply ring-3;
     @apply ring-clr-10-1;
+  }
+
+  .reg-top-titlediv {
+    @apply ml-12;
+    @apply h-[256px];
+    @apply right-0;
+    @apply flex;
+    @apply flex-col-reverse;
+    @apply align-bottom;
+  }
+
+  .reg-top-titlediv-text {
+    @apply text-8xl;
+    @apply pb-8;
+    @apply pl-8;
+    @apply w-max;
+    @apply h-min;
   }
 
   .reg-10-img {
@@ -68,6 +85,7 @@
     @apply rounded-[22px];
     @apply ring-3;
     @apply ring-clr-10-1;
+    @apply select-none;
   }
 
   .std-button {
@@ -83,7 +101,9 @@
     @apply hover:text-white;
     @apply hover:ring-clr-10-2;
     @apply active:bg-clr-10-2;
+    @apply active:text-black;
     @apply duration-200;
+    @apply select-none;
   }
 }
 
