@@ -1,8 +1,6 @@
 import {Navigate} from "react-router-dom";
 import {useParams} from "react-router";
 import {ProjectDataLoader} from "./ProjectDataLoader.tsx";
-import {ProjectsListContainer} from "./list-overview/ProjectsListContainer.tsx";
-import {ProjectListItemDetailsContainer} from "./list-overview/list-details/ProjectListItemDetailsContainer.tsx";
 import type {ProjectData, CategoryData} from "../../json-interfaces/projects.tsx";
 import {useState} from "react";
 import {ProjectCategory} from "./ProjectCategory.tsx";
