@@ -15,10 +15,10 @@ export function Sidebar({somePageNames=["Home"]}) {
                 somePageNames = {somePageNames}
             />
 
-            <div className={styles.sidebar_top_container} style={{marginTop: "auto"}}>
+            {/*<div className={styles.sidebar_top_container} style={{marginTop: "auto"}}>
                 <p style={{textAlign: "center"}}>Bottom</p>
                 <p style={{textAlign: "center"}}>Socials go here</p>
-            </div>
+            </div>*/}
         </SidebarContainer>
     )
 }
