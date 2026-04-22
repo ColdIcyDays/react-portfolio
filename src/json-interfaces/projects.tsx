@@ -12,7 +12,9 @@ export interface ProjectData
 {
     ProjectName: string;
     ProjectDesc: string;
-    ProjectImage: string;
+    ProjectThumbnailImage: string;
+    ProjectFullImage: string;
+    ProjectWebpage: string;
     HasUniquePage: boolean;
-    HTML_LongProjectDesc: string;
+    LongProjectDesc: string;
 }

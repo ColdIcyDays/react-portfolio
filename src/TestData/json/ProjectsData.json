@@ -3,58 +3,36 @@
     "CategorySubpageDenotation": "WebdevProjects",
     "CategoryTitle": "Webdev Projects",
     "CategoryImage": "imgs/munamii.png",
-    "CategoryDescription": "These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing! These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing!",
+    "CategoryDescription": "These are my webdev projects. I mainly work in React with vite using Typescript.",
     "CategoryCTA": "Go to website",
     "Data":
     [
       {
         "ProjectName": "CV",
         "ProjectDesc": "My cv rewritten in HTML and CSS.",
-        "ProjectImage": "imgs/successor.png",
+        "ProjectThumbnailImage": "imgs/CV.png",
+        "ProjectFullImage": "imgs/CV_HD.png",
+        "ProjectWebpage": "https://cv-website-eight-smoky.vercel.app/",
         "HasUniquePage": false,
-        "HTML_LongProjectDesc": "This was my first front-end project during my Lexicon course."
+        "LongProjectDesc": "This was my first front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Munamii cakery",
         "ProjectDesc": "A simple website for a cakery.",
-        "ProjectImage": "imgs/successor.png",
+        "ProjectThumbnailImage": "imgs/munamii.png",
+        "ProjectFullImage": "imgs/Munamii_FULL.png",
+        "ProjectWebpage": "https://munami-bakery-lexicon.vercel.app/",
         "HasUniquePage": false,
-        "HTML_LongProjectDesc": "This was my second front-end project during my Lexicon course."
+        "LongProjectDesc": "This was my second front-end project during my Lexicon course."
       },
       {
         "ProjectName": "Portfolio",
         "ProjectDesc": "This portfolio page.",
-        "ProjectImage": "imgs/successor.png",
+        "ProjectThumbnailImage": "imgs/TEMP_PIC.png",
+        "ProjectFullImage": "imgs/TEMP_PIC.png",
+        "ProjectWebpage": "https://cv-website-eight-smoky.vercel.app/",
         "HasUniquePage": false,
-        "HTML_LongProjectDesc": "This was my third front-end project during my Lexicon course."
-      },
-      {
-        "ProjectName": "TEST DATA AHHH",
-        "ProjectDesc": "TEST DATA AHHH.",
-        "ProjectImage": "imgs/successor.png",
-        "HasUniquePage": false,
-        "HTML_LongProjectDesc": "TEST DATA AHHH."
-      },
-      {
-        "ProjectName": "TEST DATA AHHH",
-        "ProjectDesc": "TEST DATA AHHH.",
-        "ProjectImage": "imgs/successor.png",
-        "HasUniquePage": false,
-        "HTML_LongProjectDesc": "TEST DATA AHHH."
-      },
-      {
-        "ProjectName": "TEST DATA AHHH",
-        "ProjectDesc": "TEST DATA AHHH.",
-        "ProjectImage": "imgs/successor.png",
-        "HasUniquePage": false,
-        "HTML_LongProjectDesc": "TEST DATA AHHH."
-      },
-      {
-        "ProjectName": "TEST DATA AHHH",
-        "ProjectDesc": "TEST DATA AHHH.",
-        "ProjectImage": "imgs/successor.png",
-        "HasUniquePage": false,
-        "HTML_LongProjectDesc": "TEST DATA AHHH."
+        "LongProjectDesc": "This was my third front-end project during my Lexicon course."
       }
     ]
   },
@@ -62,16 +40,18 @@
     "CategorySubpageDenotation": "GameProjects",
     "CategoryTitle": "Game Projects",
     "CategoryImage": "imgs/successor.png",
-    "CategoryDescription": "These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing! These are my webdev projects i have made, they are cool and neat and cool and sometimes even quite neat. WOW what a wonderful thing!",
+    "CategoryDescription": "These are my games I've released. I mainly work in C++ with Unreal Engine 5.",
     "CategoryCTA": "Go to game",
     "Data":
     [
       {
         "ProjectName": "Successor",
         "ProjectDesc": "Successor is a tactical, real-time RPG in Unreal Engine 5.",
-        "ProjectImage": "imgs/successor.png",
+        "ProjectThumbnailImage": "imgs/successor.png",
+        "ProjectFullImage": "imgs/successor.png",
+        "ProjectWebpage": "https://store.steampowered.com/app/1284730/Successor/",
         "HasUniquePage": false,
-        "HTML_LongProjectDesc": "This is a game that is currently released on steam."
+        "LongProjectDesc": "This is a game that is currently released on steam."
       }
     ]
   }
