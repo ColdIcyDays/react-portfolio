@@ -8,7 +8,8 @@ export function ProjectCategory({ ProjCategoryData }: { ProjCategoryData: Catego
     return (
         <div className="h-max flex flex-row items-center">
             {/*<img src={ProjCategoryData.CategoryImage} className='ml-auto reg-10-img'/>*/}
-            <ProjectCategoryImageScrollContainer someCategoryData={ProjCategoryData.Data}/>
+            <ProjectCategoryImageScrollContainer someCategoryData={ProjCategoryData.Data}
+                                                 aProjectCategorySubpageName={ProjCategoryData.CategorySubpageDenotation}/>
 
             <div className='reg-30-div  w-[256px] h-max min-h-85 min-w-lg ml-auto flex flex-col'>
                 <h1 className='text-center p-8 text-3xl'>{ProjCategoryData.CategoryTitle}</h1>

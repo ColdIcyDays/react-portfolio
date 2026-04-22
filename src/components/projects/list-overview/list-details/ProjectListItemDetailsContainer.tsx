@@ -30,7 +30,7 @@ export function ProjectListItemDetailsContainer({someData} : {someData: ProjectD
           </div>
           <h1>{someData.ProjectName}</h1>
           {/* TODO: Consider if this is a bit to dangerous. The data i'm converting is the data in my github, so it should be fine.*/}
-          <p dangerouslySetInnerHTML={{__html : someData.HTML_LongProjectDesc}}>
+          <p dangerouslySetInnerHTML={{__html : someData.LongProjectDesc}}>
 
           </p>
           {/*<p>

@@ -6,13 +6,14 @@ import {ProjectListItemDetailsContainer} from "./list-overview/list-details/Proj
 import type {ProjectData, CategoryData} from "../../json-interfaces/projects.tsx";
 import {useState} from "react";
 import {ProjectCategory} from "./ProjectCategory.tsx";
+import {ProjectDetailsContainer} from "./details/ProjectDetailsContainer.tsx";
 
 
 export function ProjectsContainer() {
     const [dataLoader] = useState(new ProjectDataLoader());
 
     const params = useParams();
-    const isInCategory : boolean = params["category"] !== undefined;
+    /*const isInCategory : boolean = params["category"] !== undefined;*/
     const isInDetails : boolean = params["projectname"] !== undefined;
 
     if (isInDetails)
@@ -54,13 +55,13 @@ export function ProjectsContainer() {
 
 
         return(
-                <ProjectListItemDetailsContainer
-                    someData={foundData}
+                <ProjectDetailsContainer
+                    someProjectData={foundData}
                 />
         );
     }
 
-    if (isInCategory)
+   /* if (isInCategory)
     {
         const category = dataLoader.GetProjectCategory(params["category"]);
         return (
@@ -68,13 +69,13 @@ export function ProjectsContainer() {
                 someProjectData={category}
             />
         );
-    }
+    }*/
 
     return (
       <div className='min-h-dvh w-auto grow auto-rows-min'>
 
-          <div className="ml-12 h-[256px] reg-30-div right-0 flex flex-col-reverse align-bottom">
-            <h1 className='text-8xl pb-8 pl-8 w-min h-min'>Projects</h1>
+          <div className="reg-top-titlediv">
+            <h1 className='reg-top-titlediv-text'>Projects</h1>
           </div>
 
           <div className='h-12'></div>
