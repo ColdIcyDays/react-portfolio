@@ -18,7 +18,7 @@ export function HomeContainer() {
             </div>
 
             <div className="w-[60%] grid grid-cols-2 grow-40 mr-auto mb-0 ml-auto bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
-                <div className="w-lg h-96 grid col-auto">
+                <div className="w-full h-96 grid col-auto">
                     <h2 className="text-center text-4xl pt-8">About me </h2>
                     <p className="pl-8 pr-8">
                         My name is Erik Ljungman. I'm a new full-stack developer based in Malmö, Sweden.
@@ -26,12 +26,11 @@ export function HomeContainer() {
                         My background is in Game development, mainly in C++, but now I'm learning full-stack development at Lexicon.
                         <br/> <br/>
                     </p>
-                        <p className="text-center">Check out my projects here!</p>
-
+                    <p className="text-center">Check out my projects here!</p>
 
                 </div>
 
-                <div className="w-lg h-96">
+                <div className="w-full h-96">
                     <h2 className="text-center text-4xl pt-8">Contact </h2>
                 </div>
             </div>
