@@ -37,7 +37,7 @@ export function ContactContainer() {
                   <img className='reg-10-img m-auto' src={profilePic}/>
               </div>*/}
 
-              <div className='flex flex-col reg-30-div w-3/4 ml-auto h-[374px] p-8'>
+              <div className='flex flex-col reg-30-div w-3/4 ml-auto h-[256px] p-8'>
                   <div className='w-1/2'>
                       <h1 className=' text-5xl'>Got some work?</h1>
                       <p className='pt-4 text-2xl '>Reach out on my socials or email below!</p>
