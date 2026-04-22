@@ -11,9 +11,12 @@ export function ProjectCategory({ ProjCategoryData }: { ProjCategoryData: Catego
             <ProjectCategoryImageScrollContainer someCategoryData={ProjCategoryData.Data}
                                                  aProjectCategorySubpageName={ProjCategoryData.CategorySubpageDenotation}/>
 
-            <div className='reg-30-div  w-[256px] h-max min-h-85 min-w-lg ml-auto flex flex-col'>
-                <h1 className='text-center p-8 text-3xl'>{ProjCategoryData.CategoryTitle}</h1>
-                <p className='p-8'>{ProjCategoryData.CategoryDescription}</p>
+
+            <div className='reg-30-div w-1/2 h-max min-h-85 min-w-1/3 ml-auto flex flex-col'>
+                <div className='w-1/2'>
+                    <h1 className='m-auto text-center p-8 text-3xl'>{ProjCategoryData.CategoryTitle}</h1>
+                    <p className='m-auto p-8'>{ProjCategoryData.CategoryDescription}</p>
+                </div>
                 <div className='h-[50px]'></div>
                 {/*<Link className='block m-auto' to={"/Projects/" + ProjCategoryData.CategorySubpageDenotation}>
                     <button className='std-button'>Learn more</button>
