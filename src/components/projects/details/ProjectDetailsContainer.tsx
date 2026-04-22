@@ -9,7 +9,7 @@ export function ProjectDetailsContainer({ someProjectData } : { someProjectData:
           </div>
 
           <div>
-              <img className='reg-10-img max-h-[512px] m-auto mt-12 mb-12' src={"/"+ someProjectData.ProjectFullImage}/>
+              <img className='reg-10-img max-h-[512px] m-auto mt-12 mb-6' src={"/"+ someProjectData.ProjectFullImage}/>
 
           </div>
 
