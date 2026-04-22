@@ -4,10 +4,14 @@ import munamiicakeryIMG from "../../imgs/munamii.png"
 export function HomeContainer() {
     return (
         <div className="min-h-dvh w-auto grow flex flex-col">
+            <div className='reg-top-titlediv'>
+                <h1 className='reg-top-titlediv-text '>
+                    Home
+                </h1>
+            </div>
+            <div className="m-auto w-min mt-[96px]">
 
-            <div className="m-auto w-min mt-[141px]">
-
-                <h1 className="text-[64px]/18">Erik Ljungman</h1> {/*className={styles.home_fullname_text}*/}
+                <h1 className="text-[64px]/18">Erik Ljungman</h1>
             </div>
             <div className="m-auto mt-8 w-max grid grid-cols-2 gap-[47px]">
                 <img src={successorIMG} alt="Successor IMG" className="block reg-10-img"/>
@@ -17,7 +21,7 @@ export function HomeContainer() {
                 <h2 className="text-[32px]">Games and full-stack developer</h2>
             </div>
 
-            <div className="w-[60%] grid grid-cols-2 grow-40 mr-auto mb-0 ml-auto bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
+            <div className="w-[60%] max-w-[903px] grid grid-cols-2 grow-40 mr-auto mb-0 mt-[96px] ml-auto bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
                 <div className="w-full h-96 grid col-auto">
                     <h2 className="text-center text-4xl pt-8">About me </h2>
                     <p className="pl-8 pr-8">
@@ -26,7 +30,7 @@ export function HomeContainer() {
                         My background is in Game development, mainly in C++, but now I'm learning full-stack development at Lexicon.
                         <br/> <br/>
                     </p>
-                    <p className="text-center">Check out my projects here!</p>
+                    <p className="text-center">{/*Check out my projects here!*/}</p>
 
                 </div>
 
