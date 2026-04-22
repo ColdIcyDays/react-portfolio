@@ -60,7 +60,7 @@ export function ContactContainer() {
                       </div>
                   </div>
                   <form ref={form} className='flex flex-col grow' onSubmit={SendEmail}>
-                      <div className='mx-8 mb-8 grow flex flex-col'>
+                      <div className='mx-8 mb-8 grow flex flex-col w-1/2'>
                           <label className='text-white'>Your name</label>
                           <input name={"name"} type={"text"} placeholder={"Your name"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
 
