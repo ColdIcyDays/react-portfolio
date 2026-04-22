@@ -66,6 +66,7 @@
   .reg-top-titlediv {
     @apply ml-12;
     @apply h-[256px];
+    @apply min-h-[256px];
     @apply right-0;
     @apply flex;
     @apply flex-col-reverse;
@@ -102,6 +103,7 @@
     @apply hover:ring-clr-10-2;
     @apply active:bg-clr-10-2;
     @apply active:text-black;
+    @apply transition;
     @apply duration-200;
     @apply select-none;
   }
