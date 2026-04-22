@@ -24,7 +24,7 @@ export function ProjectCategoryImageScrollContainer({ someCategoryData, aProject
                                                        aProjectCategorySubpageName={aProjectCategorySubpageName}/>
                     ))}
 
-                    <div className='w-[32px] h-[48px] shrink-0'> {/* This is so we have padding on the far right of the scroll bar.*/}
+                    <div className='w-[1px] h-[48px] shrink-0'> {/* This is so we have padding on the far right of the scroll bar.*/}
 
                     </div>
                 </ul>
