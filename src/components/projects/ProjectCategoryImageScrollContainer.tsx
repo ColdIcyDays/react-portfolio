@@ -17,8 +17,8 @@ export function ProjectCategoryImageScrollContainer({ someCategoryData, aProject
 
     return (
         <div  className='w-full pl-12 pr-12'>
-            <div ref={horizontalBar} className='reg-30-div bg-clr-invisible p-12 max-h-full min-h-[404px] flex flex-row overflow-x-auto overflow-y-hidden w-full min-w-0'>
-                <ul className='flex gap-4'>
+            <div ref={horizontalBar} className='reg-30-div ring-clr-10-1/50 bg-clr-invisible p-12 max-h-full min-h-[404px] flex flex-row overflow-x-auto overflow-y-hidden w-full min-w-0'>
+                <ul className='flex gap-12'>
                     {someCategoryData.toReversed().map((data, index) => (
                         <ProjectCategoryImageComponent key={"CategoryImage" + index} someCategoryData={data}
                                                        aProjectCategorySubpageName={aProjectCategorySubpageName}/>
