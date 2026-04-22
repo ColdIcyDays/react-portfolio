@@ -19,7 +19,7 @@ export function ProjectCategoryImageScrollContainer({ someCategoryData, aProject
         <div  className='w-full pl-12 pr-12'>
             <div ref={horizontalBar} className='reg-30-div bg-clr-invisible p-12 max-h-full min-h-[404px] flex flex-row overflow-x-auto overflow-y-hidden w-full min-w-0'>
                 <ul className='flex gap-4'>
-                    {someCategoryData.reverse().map((data, index) => (
+                    {someCategoryData.toReversed().map((data, index) => (
                         <ProjectCategoryImageComponent key={"CategoryImage" + index} someCategoryData={data}
                                                        aProjectCategorySubpageName={aProjectCategorySubpageName}/>
                     ))}
