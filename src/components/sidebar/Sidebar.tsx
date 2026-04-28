@@ -1,14 +1,17 @@
 import styles from "./sidebar-style.module.css"
 import {SidebarPagelinksContainer} from "./Sidebar-Pagelinks-Container.tsx";
 import {SidebarContainer} from "./SidebarContainer.tsx";
-import pfpIMG from "../../imgs/profile_picture.jpg"
+import {Link} from "react-router-dom";
 
 
 export function Sidebar({somePageNames=["Home"]}) {
     return (
         <SidebarContainer>
             <div className={styles.sidebar_top_container}>
-                <img src={pfpIMG} className="rounded-full ring-3 ring-clr-10-1 w-[75%] block m-auto mt-8"/>
+                <Link to={"/Contact"}>
+                <img src={"/imgs/profile_picture.jpg"}
+                     className="rounded-full ring-3 ring-clr-10-1 w-[75%] block m-auto mt-8 hover:scale-105 transition-transform"/>
+                </Link>
             </div>
 
             <SidebarPagelinksContainer
