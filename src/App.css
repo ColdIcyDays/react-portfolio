@@ -8,6 +8,13 @@
   width: 100%;
 }*/
 
+:root {
+  --max-inf-scroll-count: 4;
+  --slide-width: 256px;
+  --slide-gap: 10px;
+  --slide-time: 50s;
+}
+
 @theme {
   --font-standard: "Satoshi", "sans-serif"; /* Test */
 
@@ -106,6 +113,23 @@
     @apply transition;
     @apply duration-200;
     @apply select-none;
+  }
+
+  .inf-scroll-container {
+    mask-image: linear-gradient(to bottom, transparent , black 25%, black 75%, transparent);
+  }
+  
+  .inf-scroll {
+    animation: inf-up 50s linear infinite;
+  }
+  
+  @keyframes inf-up {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
   }
 }
 
