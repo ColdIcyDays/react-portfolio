@@ -33,6 +33,15 @@
         "ProjectWebpage": "https://erikljungman-portfolio.vercel.app/",
         "HasUniquePage": false,
         "LongProjectDesc": "This was my third front-end project during my Lexicon course."
+      },
+      {
+        "ProjectName": "Parcel Tracker",
+        "ProjectDesc": "Simple parcel tracker.",
+        "ProjectThumbnailImage": "imgs/Parcel-Tracking.PNG",
+        "ProjectFullImage": "imgs/Parcel-Tracking.PNG",
+        "ProjectWebpage": "https://react-parceltracker.vercel.app/",
+        "HasUniquePage": false,
+        "LongProjectDesc": "This was my fourth front-end project during my Lexicon course."
       }
     ]
   },
