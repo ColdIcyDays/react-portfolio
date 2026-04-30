@@ -1,10 +1,19 @@
 import {Link} from "react-router-dom";
 import * as emailjs from "@emailjs/browser";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 
 export function ContactContainer() {
 
+    enum EmailSentState {
+        NoAttempt = 0,
+        Success = 1,
+        Failure = 2
+    }
+
+    const [formSubmitState, setFormSubmitState] = useState(EmailSentState.NoAttempt);
+
     const form = useRef<HTMLFormElement>(null);
+
 
     function SendEmail(aEvent : React.SyntheticEvent<HTMLFormElement>) {
         aEvent.preventDefault();
@@ -20,10 +29,35 @@ export function ContactContainer() {
         {
             /*console.log(form.current)
             console.log(form.current.data)*/
+            /* TODO: It should only be success on em*/
             emailjs.send("service_e301b9s","template_portfolio_form", foundData, "R30HDcPHz8rV1U77T")
-                .then( /* Do stuff */);
+                .then((value)=>
+                {
+                    console.log("Emailjs response: '" + value.text + "'");
+                    if (value.status === 200)
+                    {
+                        setFormSubmitState(EmailSentState.Success);
+                    }
+                    else
+                    {
+                        setFormSubmitState(EmailSentState.Failure);
+                    }
+                },
+                    (reason) =>
+                    {
+                        console.log("Emailjs reject: '" + reason + "'");
+                        setFormSubmitState(EmailSentState.Failure);
+                    });
+
+
+        }
+        else
+        {
+            setFormSubmitState(EmailSentState.Failure)
         }
 
+
+        aEvent.currentTarget.reset();
     }
 
     return (
@@ -56,7 +90,11 @@ export function ContactContainer() {
               <div className='reg-30-div w-1/2 h-[596px] max-h-[596px] mt-[48px] ml-auto flex flex-col'>
                   <div>
                       <div className='w-full p-8'>
-                          <h1 className=' text-5xl'>Send me an email!</h1>
+                          <h1 className='text-5xl'>Send me an email!</h1>
+                          <h2 className='text-xl text-[#00FF00]/85'>{
+                              formSubmitState === EmailSentState.Success ? "Email sent!" :
+                                  formSubmitState === EmailSentState.Failure ? "There was an error, try again later!" :
+                                      ""}</h2>
                       </div>
                   </div>
                   <form ref={form} className='flex flex-col grow' onSubmit={SendEmail}>
