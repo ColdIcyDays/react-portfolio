@@ -6,14 +6,14 @@ import {ProjectCategoryImageScrollContainer} from "./ProjectCategoryImageScrollC
 *  The projects should also be ordered by date. So newest projects first to oldest. */
 export function ProjectCategory({ ProjCategoryData }: { ProjCategoryData: CategoryData}) {
     return (
-        <div className="h-max flex flex-row items-center">
+        <div className="h-max flex flex-col xl:flex-row items-center">
             {/*<img src={ProjCategoryData.CategoryImage} className='ml-auto reg-10-img'/>*/}
             <ProjectCategoryImageScrollContainer someCategoryData={ProjCategoryData.Data}
                                                  aProjectCategorySubpageName={ProjCategoryData.CategorySubpageDenotation}/>
 
 
-            <div className='reg-30-div w-1/2 h-max min-h-85 min-w-1/3 ml-auto flex flex-col'>
-                <div className='w-1/2'>
+            <div className='reg-30-div xl:w-1/2 w-full h-max min-h-85 xl:min-w-1/3 ml-auto flex flex-col mt-12 xl:mt-0'>
+                <div className='w-1/2 m-auto'>
                     <h1 className='m-auto text-center p-8 text-3xl'>{ProjCategoryData.CategoryTitle}</h1>
                     <p className='m-auto p-8'>{ProjCategoryData.CategoryDescription}</p>
                 </div>

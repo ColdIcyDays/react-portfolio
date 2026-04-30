@@ -16,8 +16,8 @@ export function HomeContainer() {
             </div>
             <div className='flex grow'>
 
-                    <div className='ml-12 w-min min-w-[512px] h-full flex flex-col'>
-                            <div className="h-auto w-full grow mt-12 bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
+                    <div className='ml-12 xl:w-min w-full xl:mr-0 mr-12 xl:min-w-[512px] h-full flex flex-col'>
+                            <div className="h-auto grow mt-12 bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
                                 <div className="m-auto w-max mt-[32px]">
 
                                     <h1 className="text-[64px]/18">Erik Ljungman</h1>
@@ -48,6 +48,7 @@ export function HomeContainer() {
 
                     </div>
 
+                <div className='w-full flex flex-row hidden xl:flex'>
                     <div className='w-[512px] m-auto max-h-full'>
                         <HomeVerticalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={false}/>
                     </div>
@@ -55,6 +56,7 @@ export function HomeContainer() {
                     <div className='w-[512px] m-auto max-h-full'>
                         <HomeVerticalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={true}/>
                     </div>
+                </div>
             </div>
         </div>
     )

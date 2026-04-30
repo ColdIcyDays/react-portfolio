@@ -56,7 +56,6 @@ export function ContactContainer() {
             setFormSubmitState(EmailSentState.Failure)
         }
 
-
         aEvent.currentTarget.reset();
     }
 
@@ -71,8 +70,8 @@ export function ContactContainer() {
                   <img className='reg-10-img m-auto' src={profilePic}/>
               </div>*/}
 
-              <div className='flex flex-col reg-30-div w-3/4 ml-auto h-[256px] p-8'>
-                  <div className='w-1/2'>
+              <div className='flex flex-col reg-30-div w-full xl:w-3/4 ml-auto h-[256px] p-8'>
+                  <div className='w-full xl:w-1/2'>
                       <h1 className=' text-5xl'>Got some work?</h1>
                       <p className='pt-4 text-2xl '>Reach out on my socials or email below!</p>
                   </div>
@@ -87,7 +86,7 @@ export function ContactContainer() {
               </div>
               </div>
 
-              <div className='reg-30-div w-1/2 h-[596px] max-h-[596px] mt-[48px] ml-auto flex flex-col'>
+              <div className='xl:mb-0 pb-16 reg-30-div w-full xl:w-1/2 h-[596px] max-h-[596px] mt-[48px] ml-auto flex flex-col'>
                   <div>
                       <div className='w-full p-8'>
                           <h1 className='text-5xl'>Send me an email!</h1>
@@ -98,7 +97,7 @@ export function ContactContainer() {
                       </div>
                   </div>
                   <form ref={form} className='flex flex-col grow' onSubmit={SendEmail}>
-                      <div className='mx-8 mb-8 grow flex flex-col w-1/2'>
+                      <div className='mx-8 mb-8 grow flex flex-col xl:w-1/2'>
                           <label className='text-white'>Your name</label>
                           <input name={"name"} type={"text"} placeholder={"Your name"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
 
@@ -109,7 +108,7 @@ export function ContactContainer() {
                           <textarea name={"message"} placeholder={"Your Message"} className='resize-none grow ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
                       </div>
 
-                        <input type={"submit"} value={"Send"} className='std-button max-w-[128px] max-h-[64px] mt-auto ml-4 mb-4'/>
+                        <input type={"submit"} value={"Send"} className='std-button min-w-[128px] max-w-[128px] max-h-[64px] mt-auto mx-auto xl:mr-0 xl:ml-4 mb-4'/>
                   </form>
               </div>
 
