@@ -2,15 +2,23 @@ import {Link} from "react-router-dom";
 import * as emailjs from "@emailjs/browser";
 import {useRef, useState} from "react";
 
-export function ContactContainer() {
+const EmailSentState = {
+    NoAttempt: 0,
+    Success: 1,
+    Failure: 2
+} as const;
 
-    enum EmailSentState {
+type EmailSentState = (typeof EmailSentState)[keyof typeof EmailSentState];
+
+export function ContactContainer() {
+    /*enum EmailSentState {
         NoAttempt = 0,
         Success = 1,
         Failure = 2
-    }
+    }*/
 
-    const [formSubmitState, setFormSubmitState] = useState(EmailSentState.NoAttempt);
+
+    const [formSubmitState, setFormSubmitState] = useState<number>(EmailSentState.NoAttempt);
 
     const form = useRef<HTMLFormElement>(null);
 

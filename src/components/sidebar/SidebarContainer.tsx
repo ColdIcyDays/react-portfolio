@@ -1,3 +1,6 @@
+
+import {useState} from "react";
+
 export function SidebarContainer({ children, isMobileSidebar }: { children: React.ReactNode, isMobileSidebar:boolean }) {
 
    /* const sidebarPopoutBtn = useRef<HTMLDivElement>(0);
@@ -47,5 +50,3 @@ export function SidebarContainer({ children, isMobileSidebar }: { children: Reac
 )
 }
 
-
-import {useRef, useState} from "react";
