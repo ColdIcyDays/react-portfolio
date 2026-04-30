@@ -39,4 +39,19 @@ export class ProjectDataLoader
 
         return undefined;
     }
+
+    GetAllProjectData() : ProjectData[] | undefined
+    {
+        console.log("Amount of data: " + this.#JSONParser.LoadedJSONData.length)
+        let data: ProjectData[] = [];
+        for (let i = 0; i < this.#JSONParser.LoadedJSONData.length; i++)
+        {
+            //data.concat(this.#JSONParser.LoadedJSONData[i].Data);
+            for (let y = 0; y < this.#JSONParser.LoadedJSONData[i].Data.length; y++) {
+                data.push(this.#JSONParser.LoadedJSONData[i].Data[y])
+            }
+        }
+
+        return data;
+    }
 }

@@ -2,7 +2,7 @@ import type {ProjectData} from "../../json-interfaces/projects.tsx";
 import {useState} from "react";
 
 
-export function HomeVerticalProjectScroll({ DataToScroll } : { DataToScroll: ProjectData[] })
+export function HomeVerticalProjectScroll({ DataToScroll, AnimateReverse } : { DataToScroll: ProjectData[], AnimateReverse:boolean })
 {
 
     const [scrollData, setScrollData] = useState<ProjectData[]>([]);
@@ -11,7 +11,10 @@ export function HomeVerticalProjectScroll({ DataToScroll } : { DataToScroll: Pro
     {
         console.log("List Set data...");
 
-        const duplicatedData = [...DataToScroll, ...DataToScroll];
+        let dupedSortedData = DataToScroll;
+        dupedSortedData = DataToScroll.sort(() => Math.random() - .5);
+
+        const duplicatedData = [...dupedSortedData, ...dupedSortedData];
 
         /* TODO: Don't duplicate all data. Duplicate the images only! */
 
@@ -27,17 +30,22 @@ export function HomeVerticalProjectScroll({ DataToScroll } : { DataToScroll: Pro
     })
 
     return (
-        <div className='h-[1024px] w-full mx-auto flex flex-col overflow-hidden inf-scroll-container'>
-            <div className='inf-scroll translate-y-[-100%]'>
+        <div className='h-[1024px] w-full mx-auto flex flex-col overflow-hidden inf-scroll-container gap-0'>
+            <div className='inf-scroll translate-y-[-100%]'
+                 style={{animationDirection: AnimateReverse ? "reverse" : "normal",
+                     transform: AnimateReverse ? "translateY(100%)" : "translateY(-100%)"}}>
                 {
                     scrollData.map((Data, index) => (<img key={Data.ProjectName + index}
-                                                     className='max-w-[256px] mx-auto py-8 transition-all select-none' src={Data.ProjectThumbnailImage} alt={"TEST"}/>))
+                                                     className='w-[376px] hover:scale-105 mx-auto py-4 transition-all select-none' src={Data.ProjectThumbnailImage} alt={"AnimateIMG"}/>))
                 }
             </div>
-            <div className='inf-scroll translate-y-[-100%]'>
+            <div className='inf-scroll translate-y-[-100%]'
+                 style={{animationDirection: AnimateReverse ? "reverse" : "normal",
+                     transform: AnimateReverse ? "translateY(100%)" : "translateY(-100%)"}}>
                 {
                     scrollData.map((Data, index) => (<img key={Data.ProjectName + index}
-                                                   className='max-w-[256px] mx-auto py-8 transition-all select-none' src={Data.ProjectThumbnailImage} alt={"TEST"}/>))
+                                                   className='w-[376px] hover:scale-105 mx-auto py-4 transition-all select-none'
+                                                          src={Data.ProjectThumbnailImage} alt={"AnimateIMG"}/>))
                 }
             </div>
         </div>
