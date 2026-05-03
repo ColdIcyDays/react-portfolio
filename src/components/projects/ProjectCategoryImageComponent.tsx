@@ -16,17 +16,16 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
         setDivOpacity(1);
     }
 
- /*   function HideButtonDiv (){
+    function HideButtonDiv (){
         console.log("Hiding DIV");
         setDivOpacity(0);
-    }*/
+    }
 
     return (
         <div className='max-w-77 max-h-77 shrink-0'>
             <div className='h-full w-full group/projectHovered'
-                 onTouchEnd={ShowButtonDiv}
-                 /*onMouseEnter={ShowButtonDiv}
-                 onMouseLeave={HideButtonDiv}*/>
+                 onMouseEnter={ShowButtonDiv}
+                 onMouseLeave={HideButtonDiv}>
 
                 {/*<h1 className='relative w-77 m-auto text-black text-5xl text-center duration-500' style={{opacity: divOpacity}}>{someCategoryData.ProjectName}</h1>*/}
 
