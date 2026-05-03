@@ -5,7 +5,7 @@ export function ProjectDetailsContainer({ someProjectData } : { someProjectData:
     return (
       <div className='max-h-max w-auto grow flex flex-col'>
           <div className='reg-top-titlediv'>
-            <h1 className='reg-top-titlediv-text'>{someProjectData.ProjectName}</h1>
+            <h1 className='reg-top-titlediv-text text-6xl xl:text-8xl'>{someProjectData.ProjectName}</h1>
           </div>
 
           {/* TODO: This will break as soon as my description goes out of bounds. I'm running of time so
@@ -24,13 +24,13 @@ export function ProjectDetailsContainer({ someProjectData } : { someProjectData:
                           <button className='block std-button m-auto mt-12'>Go to project</button>
                       </Link>
 
-                      <Link to={someProjectData.ProjectWebpage} target={"_blank"} rel='noopener noreferrer'>
+                      {/*<Link to={someProjectData.ProjectWebpage} target={"_blank"} rel='noopener noreferrer'>
                           <button className='block std-button m-auto mt-12'>Go to Github</button>
-                      </Link>
+                      </Link>*/}
                   </div>
 
                   <div>
-                      <img className='reg-10-img max-h-[512px] m-auto xl:mt-12 mb-6' src={"/"+ someProjectData.ProjectFullImage}/>
+                      <img className='reg-10-img w-1/2 aspect-square m-auto xl:mt-12 mb-6' src={"/"+ someProjectData.ProjectFullImage}/>
                   </div>
 
                   <div className='w-full hidden xl:block'>
