@@ -6,6 +6,11 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
     const opacityRef = useRef<HTMLDivElement>(null);
     const [divOpacity, setDivOpacity] = useState<number>(0);
 
+    if (window.innerWidth <= 1280 && divOpacity != 1)
+    {
+        ShowButtonDiv();
+    }
+
     function ShowButtonDiv (){
         console.log("SHOWING DIV");
 /*
@@ -18,21 +23,29 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
 
     function HideButtonDiv (){
         console.log("Hiding DIV");
-        setDivOpacity(0);
+
+        if (window.innerWidth >= 1280)
+        {
+            setDivOpacity(0);
+        }
+        else
+        {
+            setDivOpacity(1);
+        }
     }
 
     return (
-        <div className='max-w-77 max-h-77 shrink-0'>
+        <div className='max-w-77 max-h-77 shrink-0 '>
             <div className='h-full w-full group/projectHovered'
-                 onPointerEnter={ShowButtonDiv}
-                 onPointerLeave={HideButtonDiv}>
+                 onMouseEnter={ShowButtonDiv}
+                 onMouseLeave={HideButtonDiv}>
 
                 {/*<h1 className='relative w-77 m-auto text-black text-5xl text-center duration-500' style={{opacity: divOpacity}}>{someCategoryData.ProjectName}</h1>*/}
 
-                <img className='transition-all duration-400 ease-in-out reg-10-img top-0 ring-clr-10-1/50 object-cover w-77 h-77 group-hover/projectHovered:h-44 ' src={someCategoryData.ProjectThumbnailImage}/>
+                <img className='transition-all duration-400 ease-in-out reg-10-img top-0 ring-clr-10-1/50 object-cover w-77 h-77 xl:group-hover/projectHovered:h-44 ' src={someCategoryData.ProjectThumbnailImage}/>
 
                 <div ref={opacityRef}
-                     className='w-full hidden transition-all ease-in-out delay-100 duration-500 group-hover/projectHovered:block opacity-0 group-hover/projectHovered:opacity-100 '
+                     className='w-full xl:hidden transition-all ease-in-out delay-100 duration-500 group-hover/projectHovered:block opacity-0 group-hover/projectHovered:opacity-100 '
                 style={{opacity: divOpacity}}>
                         <h1 className='text-center text-2xl mt-4 mb-4'>{someCategoryData.ProjectName}</h1>
                     <div className='flex flex-row justify-evenly w-full'>
