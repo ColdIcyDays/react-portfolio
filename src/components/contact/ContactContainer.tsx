@@ -70,7 +70,7 @@ export function ContactContainer() {
     return (
       <div className='min-h-dvh w-auto grow flex flex-col'>
           <div className='reg-top-titlediv'>
-              <h1 className='reg-top-titlediv-text'>Contact me</h1>
+              <h1 className='reg-top-titlediv-text text-[64px] xl:text-8xl'>Contact me</h1>
           </div>
           <div className='flex flex-row mt-[48px]'>
 

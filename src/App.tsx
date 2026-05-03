@@ -9,7 +9,7 @@ function App() {
 
   return (
       <BrowserRouter>
-        <div className="flex min-h-dvh max-h-max">
+        <div className="flex min-h-lvh min-w-lvw max-h-max">
               <Sidebar
                   somePageNames={["Home", "Projects", "Contact"]}
               />
