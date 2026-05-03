@@ -25,7 +25,8 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
         <div className='max-w-77 max-h-77 shrink-0'>
             <div className='h-full w-full group/projectHovered'
                  onMouseEnter={ShowButtonDiv}
-                 onMouseLeave={HideButtonDiv}>
+                 onMouseLeave={HideButtonDiv}
+            onPointerDown={ShowButtonDiv}>
 
                 {/*<h1 className='relative w-77 m-auto text-black text-5xl text-center duration-500' style={{opacity: divOpacity}}>{someCategoryData.ProjectName}</h1>*/}
 
