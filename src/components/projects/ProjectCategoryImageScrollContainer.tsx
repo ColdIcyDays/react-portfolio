@@ -17,14 +17,14 @@ export function ProjectCategoryImageScrollContainer({ someCategoryData, aProject
 
     return (
         <div  className='w-full xl:pl-12 xl:pr-12 px-2'>
-            <div ref={horizontalBar} className='reg-30-div ring-clr-10-1/50 bg-clr-invisible p-12 max-h-full min-h-[404px] flex flex-row overflow-x-auto overflow-y-hidden w-full min-w-0'>
-                <ul className='flex gap-12'>
+            <div ref={horizontalBar} className='reg-30-div ring-clr-10-1/50 bg-clr-invisible xl:p-12 py-12 pl-2 max-h-full min-h-[404px] flex flex-row overflow-x-auto overflow-y-hidden w-full min-w-0'>
+                <ul className='flex gap-12 last:gap-2 xl:last:gap-12'>
                     {someCategoryData.toReversed().map((data, index) => (
                         <ProjectCategoryImageComponent key={"CategoryImage" + index} someCategoryData={data}
                                                        aProjectCategorySubpageName={aProjectCategorySubpageName}/>
                     ))}
 
-                    <div className='w-[1px] h-[48px] shrink-0'> {/* This is so we have padding on the far right of the scroll bar.*/}
+                    <div className='w-[1px] h-[48px] shrink-0 '> {/* This is so we have padding on the far right of the scroll bar.*/}
 
                     </div>
                 </ul>
