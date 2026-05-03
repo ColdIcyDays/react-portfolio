@@ -1,11 +1,17 @@
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {useLocation} from "react-router-dom";
 
 export function SidebarContainer({ children, isMobileSidebar }: { children: React.ReactNode, isMobileSidebar:boolean }) {
 
    /* const sidebarPopoutBtn = useRef<HTMLDivElement>(0);
     const sidebarOuterdiv = useRef<HTMLDivElement>(0);*/
     const [sidebarState, setSidebarState] = useState<boolean>(false);
+
+    const location = useLocation();
+    useEffect(() => {
+        setSidebarState(false);
+    }, [location])
 
     function ClickSidebarPopout()
     {
