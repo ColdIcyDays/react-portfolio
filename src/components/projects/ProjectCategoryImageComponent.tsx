@@ -16,10 +16,10 @@ export function ProjectCategoryImageComponent({ someCategoryData, aProjectCatego
         setDivOpacity(1);
     }
 
-    function HideButtonDiv (){
+ /*   function HideButtonDiv (){
         console.log("Hiding DIV");
         setDivOpacity(0);
-    }
+    }*/
 
     return (
         <div className='max-w-77 max-h-77 shrink-0'>
