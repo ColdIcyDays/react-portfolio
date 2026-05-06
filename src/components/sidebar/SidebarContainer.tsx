@@ -19,23 +19,6 @@ export function SidebarContainer({ children, isMobileSidebar }: { children: Reac
         console.log("Clicked sidebar popout! NewState is: " + !sidebarState);
     }
 
-    /*if (sidebarPopoutBtn !== undefined && sidebarPopoutBtn.current !== undefined)
-    {
-        /!*sidebarPopoutBtn.current.addEventListener("visibilitychange", (event) =>
-        {
-            event.preventDefault();
-
-            if (sidebarPopoutBtn !== undefined && sidebarPopoutBtn.current !== undefined)
-            {
-                console.log("SIDEBAR POPOUT IS: " + sidebarPopoutBtn.current.checkVisibility() ? "VISIBLE" : "HIDDEN");
-            }
-            else
-            {
-                console.log("sidebarPopoutBtn is undefined!");
-            }
-        })*!/
-    }*/
-
     return (
         /*shadow-[-10px_0_20px_10px_rgba(0,0,0,1.0)]*/
         <div /*ref={sidebarOuterdiv}*/

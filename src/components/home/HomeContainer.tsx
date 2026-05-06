@@ -1,6 +1,7 @@
 import {HomeVerticalProjectScroll} from "./HomeVerticalProjectScroll.tsx";
 import {useState} from "react";
 import {ProjectDataLoader} from "../projects/ProjectDataLoader.tsx";
+import {HomeHorizontalProjectScroll} from "./HomeHorizontalProjectScroll.tsx";
 
 export function HomeContainer() {
     const [dataLoader] = useState(new ProjectDataLoader());
@@ -14,7 +15,11 @@ export function HomeContainer() {
                     Home
                 </h1>
             </div>
-            <div className='flex grow'>
+            <div className='flex flex-col xl:flex-row grow'>
+
+                    <div className='block xl:hidden mt-12'>
+                        <HomeHorizontalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={false}/>
+                    </div>
 
                     <div className='xl:ml-12 xl:w-min w-full xl:min-w-[512px] h-full flex flex-col'>
                             <div className="h-auto grow mt-12 bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
@@ -43,7 +48,7 @@ export function HomeContainer() {
                         <HomeVerticalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={false}/>
                     </div>
 
-                    <div className='w-[512px] m-auto max-h-full'>
+                    <div className='hidden veryXL:block w-[512px] m-auto max-h-full'>
                         <HomeVerticalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={true}/>
                     </div>
                 </div>

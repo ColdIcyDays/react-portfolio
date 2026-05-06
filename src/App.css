@@ -22,6 +22,8 @@ body {
 @theme {
   --font-standard: "Satoshi", "sans-serif"; /* Test */
 
+  --breakpoint-xs: 512px;
+  --breakpoint-veryXL: 1800px;
   --color-*: initial;
   --color-clr-invisible: rgba(0,0,0,0);
   --color-white: #FFFFFF;
@@ -124,9 +126,17 @@ body {
   .inf-scroll-container {
     mask-image: linear-gradient(to bottom, transparent , black 25%, black 75%, transparent);
   }
-  
-  .inf-scroll {
+
+  .inf-scroll-container-horizontal {
+    mask-image: linear-gradient(to right, transparent , black 25%, black 75%, transparent);
+  }
+
+  .inf-scroll-up {
     animation: inf-up 50s linear infinite;
+  }
+
+  .inf-scroll-right {
+    animation: inf-right 50s linear infinite;
   }
   
   @keyframes inf-up {
@@ -135,6 +145,15 @@ body {
     }
     100% {
       transform: translateY(100%);
+    }
+  }
+
+  @keyframes inf-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
     }
   }
 }

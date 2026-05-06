@@ -31,7 +31,7 @@ export function HomeVerticalProjectScroll({ DataToScroll, AnimateReverse } : { D
 
     return (
         <div className='h-[1024px] w-full mx-auto flex flex-col overflow-hidden inf-scroll-container gap-0'>
-            <div className='inf-scroll translate-y-[-100%]'
+            <div className='inf-scroll-up translate-y-[-100%]'
                  style={{animationDirection: AnimateReverse ? "reverse" : "normal",
                      transform: AnimateReverse ? "translateY(100%)" : "translateY(-100%)"}}>
                 {
@@ -39,7 +39,7 @@ export function HomeVerticalProjectScroll({ DataToScroll, AnimateReverse } : { D
                                                      className='w-[376px] hover:scale-105 mx-auto py-4 transition-all select-none' src={Data.ProjectThumbnailImage} alt={"AnimateIMG"}/>))
                 }
             </div>
-            <div className='inf-scroll translate-y-[-100%]'
+            <div className='inf-scroll-up translate-y-[-100%]'
                  style={{animationDirection: AnimateReverse ? "reverse" : "normal",
                      transform: AnimateReverse ? "translateY(100%)" : "translateY(-100%)"}}>
                 {
