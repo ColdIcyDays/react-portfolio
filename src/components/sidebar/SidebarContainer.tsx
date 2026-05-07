@@ -11,6 +11,7 @@ export function SidebarContainer({ children, isMobileSidebar }: { children: Reac
     const location = useLocation();
     useEffect(() => {
         setSidebarState(false);
+        window.scrollTo(0, 0)
     }, [location])
 
     function ClickSidebarPopout()
