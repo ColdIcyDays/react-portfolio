@@ -30,7 +30,7 @@ export function HomeHorizontalProjectScroll({ DataToScroll, AnimateReverse } : {
     })
 
     return (
-        <div className='hidden xs:flex xs:max-w-[512px] lg:max-w-[1024px] h-full mx-auto gap-0 overflow-hidden  inf-scroll-container-horizontal'>
+        <div className='flex w-svw mask-none h-full mx-auto gap-0 overflow-hidden  inf-scroll-container-horizontal' >
             <div className='inf-scroll-right min-w-max translate-x-[-100%] flex flex-row'
                  style={{animationDirection: AnimateReverse ? "reverse" : "normal",
                      transform: AnimateReverse ? "translateX(100%)" : "translateX(-100%)"}}>
