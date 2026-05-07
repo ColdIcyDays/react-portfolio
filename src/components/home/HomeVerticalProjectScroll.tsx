@@ -30,7 +30,7 @@ export function HomeVerticalProjectScroll({ DataToScroll, AnimateReverse } : { D
     })
 
     return (
-        <div className='h-[1024px] w-full mx-auto flex flex-col overflow-hidden inf-scroll-container gap-0'>
+        <div className=' w-full m-auto flex flex-col overflow-hidden inf-scroll-container gap-0'>
             <div className='inf-scroll-up translate-y-[-100%]'
                  style={{animationDirection: AnimateReverse ? "reverse" : "normal",
                      transform: AnimateReverse ? "translateY(100%)" : "translateY(-100%)"}}>

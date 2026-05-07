@@ -141,6 +141,7 @@ body {
 
   .inf-scroll-container {
     mask-image: linear-gradient(to bottom, transparent , black 25%, black 75%, transparent);
+    height: calc(100dvh - 256px);
   }
 
   .inf-scroll-container-horizontal {

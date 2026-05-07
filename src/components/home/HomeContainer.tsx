@@ -44,7 +44,7 @@ export function HomeContainer() {
                     </div>
 
                 <div className='w-full flex-row hidden  xl:flex'>
-                    <div className='w-max mx-auto veryXL:mr-0 max-h-full'>
+                    <div className='w-max mx-auto veryXL:mr-0 h-full'>
                         <HomeVerticalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={false}/>
                     </div>
 
