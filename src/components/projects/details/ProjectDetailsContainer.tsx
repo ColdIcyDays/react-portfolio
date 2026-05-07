@@ -5,7 +5,7 @@ export function ProjectDetailsContainer({ someProjectData } : { someProjectData:
     return (
       <div className='max-h-max w-auto grow flex flex-col'>
           <div className='reg-top-titlediv'>
-            <h1 className='reg-top-titlediv-text text-6xl xl:text-8xl'>{someProjectData.ProjectName}</h1>
+            <h1 className='reg-top-titlediv-text text-[10vw] sm:text-6xl xl:text-8xl'>{someProjectData.ProjectName}</h1>
           </div>
 
           {/* TODO: This will break as soon as my description goes out of bounds. I'm running of time so
