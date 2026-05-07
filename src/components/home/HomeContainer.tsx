@@ -17,7 +17,7 @@ export function HomeContainer() {
             </div>
             <div className='flex flex-col xl:flex-row grow'>
 
-                    <div className='block xl:hidden mt-12'>
+                    <div className='block xl:hidden mt-12 w-svw'>
                         <HomeHorizontalProjectScroll DataToScroll={loadedData ? loadedData : []} AnimateReverse={false}/>
                     </div>
 
