@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export function Sidebar({somePageNames=["Home"]}) {
     return (
-        <>
+        <div className='relative z-50'>
             <div className='hidden xl:block'>
                 <SidebarContainer
                     isMobileSidebar={false}>
@@ -48,6 +48,6 @@ export function Sidebar({somePageNames=["Home"]}) {
                 </div>*/}
                 </SidebarContainer>
             </div>
-        </>
+        </div>
     )
 }
