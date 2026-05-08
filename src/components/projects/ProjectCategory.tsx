@@ -7,7 +7,6 @@ import {ProjectCategoryImageScrollContainer} from "./ProjectCategoryImageScrollC
 export function ProjectCategory({ ProjCategoryData }: { ProjCategoryData: CategoryData}) {
     return (
         <div className="h-max flex flex-col xl:flex-row items-center">
-            {/*<img src={ProjCategoryData.CategoryImage} className='ml-auto reg-10-img'/>*/}
             <ProjectCategoryImageScrollContainer someCategoryData={ProjCategoryData.Data}
                                                  aProjectCategorySubpageName={ProjCategoryData.CategorySubpageDenotation}/>
 
@@ -18,9 +17,6 @@ export function ProjectCategory({ ProjCategoryData }: { ProjCategoryData: Catego
                     <p className='m-auto p-8'>{ProjCategoryData.CategoryDescription}</p>
                 </div>
                 <div className='h-[50px]'></div>
-                {/*<Link className='block m-auto' to={"/Projects/" + ProjCategoryData.CategorySubpageDenotation}>
-                    <button className='std-button'>Learn more</button>
-                </Link>*/}
             </div>
         </div>
     );
