@@ -13,6 +13,7 @@
         "ProjectThumbnailImage": "imgs/CV.png",
         "ProjectFullImage": "imgs/CV_HD.png",
         "ProjectWebpage": "https://cv-website-eight-smoky.vercel.app/",
+        "GithubWebpage": "https://github.com/ColdIcyDays/CV-Website",
         "HasUniquePage": false,
         "LongProjectDesc": "This was my first front-end project during my Lexicon course."
       },
@@ -22,6 +23,7 @@
         "ProjectThumbnailImage": "imgs/munamii.png",
         "ProjectFullImage": "imgs/Munamii_FULL.png",
         "ProjectWebpage": "https://munami-bakery-lexicon.vercel.app/",
+        "GithubWebpage": "https://github.com/ColdIcyDays/MunamiBakery-Lexicon",
         "HasUniquePage": false,
         "LongProjectDesc": "This was my second front-end project during my Lexicon course."
       },
@@ -31,6 +33,7 @@
         "ProjectThumbnailImage": "imgs/TEMP_PIC.png",
         "ProjectFullImage": "imgs/TEMP_PIC.png",
         "ProjectWebpage": "https://erikljungman-portfolio.vercel.app/",
+        "GithubWebpage": "https://github.com/ColdIcyDays/react-portfolio",
         "HasUniquePage": false,
         "LongProjectDesc": "This was my third front-end project during my Lexicon course."
       },
@@ -40,6 +43,7 @@
         "ProjectThumbnailImage": "imgs/Parcel-Tracking.PNG",
         "ProjectFullImage": "imgs/Parcel-Tracking.PNG",
         "ProjectWebpage": "https://react-parceltracker.vercel.app/",
+        "GithubWebpage": "https://github.com/ColdIcyDays/react-parceltracker",
         "HasUniquePage": false,
         "LongProjectDesc": "This was my fourth front-end project during my Lexicon course."
       }
@@ -59,6 +63,7 @@
         "ProjectThumbnailImage": "imgs/successor.png",
         "ProjectFullImage": "imgs/successor.png",
         "ProjectWebpage": "https://store.steampowered.com/app/1284730/Successor/",
+        "GithubWebpage": "",
         "HasUniquePage": false,
         "LongProjectDesc": "This is a game that is currently released on steam."
       }

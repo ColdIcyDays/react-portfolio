@@ -15,6 +15,7 @@ export interface ProjectData
     ProjectThumbnailImage: string;
     ProjectFullImage: string;
     ProjectWebpage: string;
+    GithubWebpage: string;
     HasUniquePage: boolean;
     LongProjectDesc: string;
 }
