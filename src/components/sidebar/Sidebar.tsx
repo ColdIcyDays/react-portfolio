@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export function Sidebar({somePageNames=["Home"]}) {
     return (
         <div className='relative z-50'>
-            <div className='hidden xl:block'>
+            <div className='hidden xl:block h-full'>
                 <SidebarContainer
                     isMobileSidebar={false}>
                     <div className={styles.sidebar_top_container}>
@@ -27,7 +27,7 @@ export function Sidebar({somePageNames=["Home"]}) {
                 </div>*/}
                 </SidebarContainer>
             </div>
-            <div className='block xl:hidden'>
+            <div className='block xl:hidden h-full'>
 
                 <SidebarContainer
                     isMobileSidebar={true}>
