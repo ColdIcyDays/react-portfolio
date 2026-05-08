@@ -10,10 +10,10 @@ export function ProjectDetailsContainer({ someProjectData } : { someProjectData:
 
           {/* TODO: This will break as soon as my description goes out of bounds. I'm running of time so
                     leaving this in a slighty broken state. Sorry!*/}
-          <div className='flex flex-col xl:grid xl:grid-cols-2'>
+          <div className='flex flex-col xl:grid xl:grid-cols-2 details-height-calc'>
               <div className='xl:ml-12 mt-8 mr-8 w-full xl:w-[90%] h-full'>
                   {/*<div className='min-h-[48px] max-h-[48px]'/>*/}
-                  <div className='reg-30-div p-12 h-full'>
+                  <div className='reg-30-div p-12 h-full rounded-b-none'>
                       <p className='text-2xl'>{someProjectData.LongProjectDesc}</p>
                   </div>
               </div>
