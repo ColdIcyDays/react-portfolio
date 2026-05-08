@@ -10,7 +10,7 @@ export function HomeContainer() {
 
     return (
         <div className="min-h-dvh w-min grow flex flex-col">
-            <div className='reg-top-titlediv'>
+            <div className='reg-top-titlediv rounded-t-none rounded-r-none'>
                 <h1 className='reg-top-titlediv-text '>
                     Home
                 </h1>
@@ -22,7 +22,7 @@ export function HomeContainer() {
                     </div>
 
                     <div className='xl:ml-12 xl:w-min w-full xl:min-w-[512px] h-full flex flex-col'>
-                            <div className="h-auto grow mt-12 bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1">
+                            <div className="h-auto grow mt-12 bg-clr-30-1 rounded-sm ring-3 ring-clr-10-1 rounded-b-none">
                                 <div className="m-auto w-max mt-[32px]">
                                     <h1 className="xl:text-[64px]/18 text-[56px]/18">Erik Ljungman</h1>
                                 </div>

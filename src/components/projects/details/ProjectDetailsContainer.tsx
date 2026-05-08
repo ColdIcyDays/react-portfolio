@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export function ProjectDetailsContainer({ someProjectData } : { someProjectData: ProjectData }) {
     return (
       <div className='max-h-max w-auto grow flex flex-col'>
-          <div className='reg-top-titlediv'>
+          <div className='reg-top-titlediv rounded-t-none rounded-r-none'>
             <h1 className='reg-top-titlediv-text text-[10vw] sm:text-6xl xl:text-8xl'>{someProjectData.ProjectName}</h1>
           </div>
 

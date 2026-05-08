@@ -72,7 +72,7 @@ export function ProjectsContainer() {
     return (
       <div className='min-h-dvh w-auto grow auto-rows-min'>
 
-          <div className="reg-top-titlediv">
+          <div className="reg-top-titlediv rounded-t-none rounded-r-none">
             <h1 className='reg-top-titlediv-text'>Projects</h1>
           </div>
 
