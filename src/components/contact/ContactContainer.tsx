@@ -69,7 +69,7 @@ export function ContactContainer() {
 
     return (
       <div className='min-h-dvh w-auto grow flex flex-col'>
-          <div className='reg-top-titlediv'>
+          <div className='reg-top-titlediv rounded-t-none rounded-r-none'>
               <h1 className='reg-top-titlediv-text text-[64px] xl:text-8xl'>Contact me</h1>
           </div>
           <div className='flex flex-row mt-[48px]'>
@@ -78,7 +78,7 @@ export function ContactContainer() {
                   <img className='reg-10-img m-auto' src={profilePic}/>
               </div>*/}
 
-              <div className='flex flex-col reg-30-div w-full xl:w-3/4 ml-auto h-[256px] p-8'>
+              <div className='flex flex-col reg-30-div w-full xl:w-3/4 ml-auto h-[256px] p-8 rounded-r-none'>
                   <div className='w-full xl:w-1/2'>
                       <h1 className=' text-5xl'>Got some work?</h1>
                       <p className='pt-4 text-2xl '>Reach out on my socials or email below!</p>
@@ -94,7 +94,7 @@ export function ContactContainer() {
               </div>
               </div>
 
-              <div className='xl:mb-0 pb-16 reg-30-div w-full xl:w-1/2 h-[596px] max-h-[596px] mt-[48px] ml-auto flex flex-col'>
+              <div className='xl:mb-0 pb-16 reg-30-div w-full xl:w-1/2 h-[596px] max-h-[596px] mt-[48px] ml-auto flex flex-col rounded-r-none'>
                   <div>
                       <div className='w-full p-8'>
                           <h1 className='text-5xl'>Send me an email!</h1>

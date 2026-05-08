@@ -10,7 +10,7 @@ export function HomeContainer() {
 
     return (
         <div className="min-h-dvh w-min grow flex flex-col">
-            <div className='reg-top-titlediv'>
+            <div className='reg-top-titlediv rounded-t-none rounded-r-none'>
                 <h1 className='reg-top-titlediv-text '>
                     Home
                 </h1>
