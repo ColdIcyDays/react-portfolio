@@ -30,8 +30,8 @@
       {
         "ProjectName": "Portfolio",
         "ProjectDesc": "This portfolio page.",
-        "ProjectThumbnailImage": "imgs/TEMP_PIC.png",
-        "ProjectFullImage": "imgs/TEMP_PIC.png",
+        "ProjectThumbnailImage": "imgs/PortfolioPage.png",
+        "ProjectFullImage": "imgs/PortfolioPage.png",
         "ProjectWebpage": "https://erikljungman-portfolio.vercel.app/",
         "GithubWebpage": "https://github.com/ColdIcyDays/react-portfolio",
         "HasUniquePage": false,
