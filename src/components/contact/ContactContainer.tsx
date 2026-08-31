@@ -86,8 +86,8 @@ export function ContactContainer() {
 
                   <div className='mt-auto'>
                       <p>erik.ljungman@gmail.com</p>
-                      <Link to={'https://www.linkedin.com/in/erik-ljungman/'} target={"_blank"} rel='noopener noreferrer'>
-                        <p>Linkedin</p>
+                      <Link to={'https://www.linkedin.com/in/erik-ljungman/'} target={"_blank"} rel='noopener noreferrer' className={"flex"}>
+                        <img src={"src/icons/linkedin-brands-solid-full.svg"} className={"w-8 h-8 my-auto"}/><p className={"my-auto"}>Linkedin</p>
                       </Link>
                   </div>
 
@@ -105,18 +105,20 @@ export function ContactContainer() {
                       </div>
                   </div>
                   <form ref={form} className='flex flex-col grow' onSubmit={SendEmail}>
-                      <div className='mx-8 mb-8 grow flex flex-col xl:w-1/2'>
-                          <label className='text-white'>Your name</label>
-                          <input name={"name"} type={"text"} placeholder={"Your name"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
+                      <div className={"xl:w-1/2 flex flex-col"}>
+                          <div className='mx-8 mb-8 grow flex flex-col'>
+                              <label className='text-white'>Your name</label>
+                              <input name={"name"} type={"text"} placeholder={"Your name"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
 
-                          <label className='text-white'>Email Address</label>
-                          <input name={"email"} type={"email"} placeholder={"Email Address"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
+                              <label className='text-white'>Email Address</label>
+                              <input name={"email"} type={"email"} placeholder={"Email Address"} className='mb-8 ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
 
-                          <label className='text-white'>Message</label>
-                          <textarea name={"message"} placeholder={"Your Message"} className='resize-none grow ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
+                              <label className='text-white'>Message</label>
+                              <textarea name={"message"} placeholder={"Your Message"} className='resize-none grow ring-1 bg-white ring-clr-10-2 w-full rounded-md px-4 py-2 mt-2 outline-none focus-ring-2 focus:ring-clr-10-1'/>
+                          </div>
+
+                          <input type={"submit"} value={"Send"} className='std-button min-w-[128px] max-w-[128px] max-h-[64px] mt-auto mx-auto mb-4'/>
                       </div>
-
-                        <input type={"submit"} value={"Send"} className='std-button min-w-[128px] max-w-[128px] max-h-[64px] mt-auto mx-auto xl:mr-0 xl:ml-4 mb-4'/>
                   </form>
               </div>
 
