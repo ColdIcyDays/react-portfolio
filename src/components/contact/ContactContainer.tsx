@@ -87,7 +87,7 @@ export function ContactContainer() {
                   <div className='mt-auto'>
                       <p>erik.ljungman@gmail.com</p>
                       <Link to={'https://www.linkedin.com/in/erik-ljungman/'} target={"_blank"} rel='noopener noreferrer' className={"flex"}>
-                        <img src={"src/icons/linkedin-brands-solid-full.svg"} className={"w-8 h-8 my-auto"}/><p className={"my-auto"}>Linkedin</p>
+                        <img src={"icons/linkedin-brands-solid-full.svg"} className={"w-8 h-8 my-auto"}/><p className={"my-auto"}>Linkedin</p>
                       </Link>
                   </div>
 
