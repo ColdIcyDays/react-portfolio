@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <div className="flex min-h-lvh min-w-lvw max-h-max">
               <Sidebar
-                  somePageNames={["Home", "Projects", "Contact"]}
+                  somePageNames={["Home", "Projects", "Contact", "CV"]}
               />
             <Routes>
                 <Route path="*" element={
