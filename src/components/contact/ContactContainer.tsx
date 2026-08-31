@@ -80,8 +80,8 @@ export function ContactContainer() {
 
               <div className='flex flex-col reg-30-div w-full xl:w-3/4 ml-auto h-[256px] p-8 rounded-r-none'>
                   <div className='w-full xl:w-1/2'>
-                      <h1 className=' text-5xl'>Got some work?</h1>
-                      <p className='pt-4 text-2xl '>Reach out on my socials or email below!</p>
+                      <h1 className='text-4xl xl:text-5xl'>Got some work?</h1>
+                      <p className='text-xl pt-4 xl:text-2xl '>Reach out on my socials or email below!</p>
                   </div>
 
                   <div className='mt-auto'>
